@@ -1,21 +1,6 @@
-TEMPLATE = app
+TEMPLATE = subdirs
 
-CONFIG += QT
+SUBDIRS = lib.pro test.pro
 
-QT += \
-    core\
-    gui
-
-MODULE_NAME = main
-
-include (../build.pri)
-
-
-
-SOURCES = \
-        main.cpp
-
-
-HEADERS = \
-
+CONFIG += ordered
 

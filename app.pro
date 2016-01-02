@@ -2,6 +2,6 @@ TEMPLATE = subdirs
 
 SUBDIRS = \
     core\
-#    utils\
-#    plugins
+#    plugins\
+#    test
 

@@ -1,22 +1,6 @@
-TEMPLATE = lib
+TEMPLATE = subdirs
 
-CONFIG += QT
+SUBDIRS = lib.pro test.pro
 
-QT += \
-    core\
-    gui
-
-MODULE_NAME = config 
-
-INCLUDEPATH += $$_PRO_FILE_PWD_
-INCLUDEPATH += $$_PRO_FILE_PWD_/inc
-
-include (../build.pri)
-
-SOURCES = \
-        config.cpp
-
-
-HEADERS = \
-
+CONFIG += ordered
 

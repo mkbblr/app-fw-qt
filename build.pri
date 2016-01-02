@@ -17,22 +17,26 @@ CONFIG(mac){
 }
 
 TARGET = $$MODULE_NAME
-TARGET_DIR = $$BASE_DIR/out/$$TARGET_PLATFORM/$$TARGET_CONF
+BASE_DIR = $$PWD
+TARGET_DIR = $$BASE_DIR/bin/$$TARGET_PLATFORM/$$TARGET_CONF
 
 DESTDIR = $$TARGET_DIR/exe
-OBJECTS_DIR = $$TARGET_DIR/obj
-MOC_DIR = $$TARGET_DIR/moc
-UI_DIR = $$TARGET_DIR/uic
+OBJECTS_DIR = $$TARGET_DIR/obj/$$MODULE_NAME
+MOC_DIR = $$TARGET_DIR/moc/$$MODULE_NAME
+UI_DIR = $$TARGET_DIR/uic/$$MODULE_NAME
 
-INCLUDEPATH += $$BASE_DIR/inc
+INCLUDEPATH += $$PWD/inc
 
+LIBS += -L$$TARGET_DIR/exe
+unix: QMAKE_RPATHDIR = $$TARGET_DIR/exe
 
-
-
-#message(working dir is $$(PWD))
-message( include paths are: $$INCLUDEPATH)
+message(DESTDIR: $$DESTDIR)
+#message (CONFIG: $$CONFIG)
+#message(PWD is $$BASE_DIR)
+#message(IN_PWD is $$IN_PWD)
+#message( include paths are: $$INCLUDEPATH)
 #message(TARGET_CONF is $$TARGET_CONF)
 #message(TARGET_PLATFORM is $$TARGET_PLATFORM)
 #message(MODULE_NAME is $$MODULE_NAME)
-message(DESTDIR is $$DESTDIR)
+#message(DESTDIR is $$DESTDIR)
 
