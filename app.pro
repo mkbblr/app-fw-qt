@@ -3,5 +3,5 @@ TEMPLATE = subdirs
 SUBDIRS = \
     core\
 #    plugins\
-#    test
 
+CONFIG(BUILDTEST): SUBDIRS += test

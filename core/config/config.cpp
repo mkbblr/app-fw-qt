@@ -1,5 +1,5 @@
 #include "def.h"
-//namespace config {
+namespace config {
 
 void config()
 {
@@ -15,4 +15,4 @@ int checkrange(int val)
 }
 
 
-//}   //namespace config
+}   //namespace config

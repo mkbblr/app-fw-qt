@@ -14,16 +14,9 @@ TEST(TestCase2, checksomethingelse)
 
 TEST(TestCase3, checkconfig)
 {
-    EXPECT_EQ(0, checkrange(101));
-    EXPECT_EQ(1, checkrange(90));
+    EXPECT_EQ(0, config::checkrange(101));
+    EXPECT_EQ(1, config::checkrange(90));
     EXPECT_EQ(0, 0);
     EXPECT_EQ(1,1);
 }
 
-GTEST_API_ int main(int argc, char ** argv)
-{
-
-    printf("\n config_test_main\n");
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}

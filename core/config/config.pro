@@ -1,6 +1,8 @@
 TEMPLATE = subdirs
 
-SUBDIRS = lib.pro test.pro
+SUBDIRS = lib.pro 
+
+CONFIG(BUILDTEST): SUBDIRS += test.pro
 
 CONFIG += ordered
 

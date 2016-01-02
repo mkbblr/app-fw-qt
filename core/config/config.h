@@ -1,6 +1,6 @@
-//namespace config {
+namespace config {
 
 int checkrange(int val);
 
 
-//} //namespace config
+} //namespace config

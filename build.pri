@@ -30,7 +30,8 @@ INCLUDEPATH += $$PWD/inc
 LIBS += -L$$TARGET_DIR/exe
 unix: QMAKE_RPATHDIR = $$TARGET_DIR/exe
 
-message(DESTDIR: $$DESTDIR)
+#message(TESTSRC: $$TESTSRC)
+#message(DESTDIR: $$DESTDIR)
 #message (CONFIG: $$CONFIG)
 #message(PWD is $$BASE_DIR)
 #message(IN_PWD is $$IN_PWD)

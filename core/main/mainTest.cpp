@@ -13,10 +13,3 @@ TEST(MainTest, check2)
 }
 
 
-GTEST_API_ int main(int argc, char ** argv)
-{
-
-    printf("\n main_test_main\n");
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
